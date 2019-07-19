@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "title": "test",
+    "owner": "te",
+    "description": "adfaafa"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "eta"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "teat",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "re"
+  }
+}
