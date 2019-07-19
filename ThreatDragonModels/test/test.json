@@ -31,11 +31,11 @@
               "id": "f3afb3d7-d56d-45a6-95e2-48f3d957b024",
               "z": 1,
               "hasOpenThreats": false,
-              "outOfScope": true,
+              "outOfScope": false,
               "reasonOutOfScope": "test",
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isOutOfScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "user"
@@ -85,27 +85,18 @@
               "angle": 0,
               "id": "f30fe09c-9b5f-489a-9213-13e78eb4302f",
               "z": 3,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "outOfScope": false,
-              "threats": [
-                {
-                  "status": "Open",
-                  "severity": "Medium",
-                  "title": "额",
-                  "type": "Spoofing",
-                  "description": "特",
-                  "mitigation": "他"
-                }
-              ],
+              "threats": [],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "process 2"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
