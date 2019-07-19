@@ -79,23 +79,33 @@
                 "height": 100
               },
               "position": {
-                "x": 341,
+                "x": 342,
                 "y": 119
               },
               "angle": 0,
               "id": "f30fe09c-9b5f-489a-9213-13e78eb4302f",
               "z": 3,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "outOfScope": false,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "额",
+                  "type": "Spoofing",
+                  "description": "特",
+                  "mitigation": "他"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "process 2"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
