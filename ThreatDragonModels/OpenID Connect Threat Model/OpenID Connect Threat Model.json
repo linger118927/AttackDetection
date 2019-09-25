@@ -20,8 +20,8 @@
                 "height": 80
               },
               "position": {
-                "x": 158,
-                "y": 176
+                "x": 157,
+                "y": 177
               },
               "angle": 0,
               "id": "da331dae-b984-4a42-8e50-2b9e044e8946",
@@ -269,6 +269,10 @@
                   "y": 68
                 },
                 {
+                  "x": 629,
+                  "y": 105
+                },
+                {
                   "x": 509,
                   "y": 135
                 }
@@ -348,6 +352,10 @@
                   "y": 338
                 },
                 {
+                  "x": 584,
+                  "y": 324
+                },
+                {
                   "x": 556,
                   "y": 301
                 }
@@ -399,10 +407,6 @@
                 {
                   "x": 435,
                   "y": 294
-                },
-                {
-                  "x": 691,
-                  "y": 283
                 }
               ],
               "id": "e9e78506-9205-4c92-9a5e-084a5813d938",
@@ -429,53 +433,6 @@
                 },
                 ".connection": {
                   "class": "connection hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Boundary",
-              "smooth": true,
-              "source": {
-                "x": 351,
-                "y": 559
-              },
-              "target": {
-                "x": 804,
-                "y": 565
-              },
-              "vertices": [
-                {
-                  "x": 573,
-                  "y": 514
-                }
-              ],
-              "id": "9e1299d0-9f14-4b06-8d1c-5ae481ad0818",
-              "z": 14,
-              "attrs": {}
-            },
-            {
-              "type": "tm.Process",
-              "size": {
-                "width": 100,
-                "height": 100
-              },
-              "position": {
-                "x": 511,
-                "y": 584
-              },
-              "angle": 0,
-              "id": "766e6927-454a-436c-88ed-33ac55136d50",
-              "z": 16,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
-                },
-                "text": {
-                  "text": "Resource\nserver"
-                },
-                ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -522,78 +479,6 @@
                   "type": "Spoofing",
                   "description": "CSRF attacks  on OAuth approvals can allow an attacker to obtain authorization to  OAuth protected resources without the consent of the user.  This attack works against the redirect URI used in the authorization    \"code\" flow.  An attacker could authorize an authorization \"code\" to  their own protected resources on an authorization server.  He then  aborts the redirect flow back to the client on his device and tricks  the victim into executing the redirect back to the client.  The  client receives the redirect, fetches the token(s) from the    authorization server, and associates the victim's client session with  the resources accessible using the token.\n Impact: The user accesses resources on behalf of the attacker.  The effective impact depends on the type of resource accessed.  For example, the user may upload private items to an attacker's  resources.",
                   "mitigation": "The first step is creating a unique session token that holds state between your app and the user's client. You later match this unique session token with the \n authentication response returned by the authorization server to verify that the user is making the request and not a malicious attacker."
-                }
-              ],
-              "attrs": {
-                ".marker-target": {
-                  "class": "marker-target hasOpenThreats isInScope"
-                },
-                ".connection": {
-                  "class": "connection hasOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Flow",
-              "smooth": true,
-              "source": {
-                "id": "997ca320-aab5-4f9f-a336-474b5d00a29e"
-              },
-              "target": {
-                "id": "766e6927-454a-436c-88ed-33ac55136d50"
-              },
-              "vertices": [
-                {
-                  "x": 491,
-                  "y": 418
-                },
-                {
-                  "x": 517,
-                  "y": 498
-                }
-              ],
-              "id": "08266558-516d-4c7c-b338-6a3794dbeaf6",
-              "labels": [
-                {
-                  "position": {
-                    "distance": 0.41369372388278663,
-                    "offset": 27.431549503002316
-                  },
-                  "attrs": {
-                    "text": {
-                      "text": "7. request resources\nusing access token",
-                      "font-weight": "400",
-                      "font-size": "small"
-                    }
-                  }
-                }
-              ],
-              "z": 18,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "ruleId": "4adaa48a-0345-4533-a189-64c98c4420dd",
-                  "title": "Generic tampering threat",
-                  "type": "Tampering",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic tampering threat"
-                },
-                {
-                  "ruleId": "13000296-b17d-4b72-9cc4-f5cc33f80e4c",
-                  "title": "Generic informtion disclosure threat",
-                  "type": "Information disclosure",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic information disclosure threat"
-                },
-                {
-                  "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
-                  "title": "Generic DoS threat",
-                  "type": "Denial of service",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic DoS threat"
                 }
               ],
               "attrs": {
